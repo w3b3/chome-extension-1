@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="android-chrome-192x192.png"/>
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="manifest" href="manifest.json"/>
+    <title>Extension</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="content.js"></script>
+    <script src="background.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.6.1.slim.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+<div class="color container-fluid">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile <span class="label label-success">New</span></a></li>
+        <!--        <li role="presentation"><a href="#">Messages</a></li>-->
+    </ul>
+    <h1 class="bg-success">Get started today</h1>
+    <!--    <img class="img-rounded" src="android-chrome-192x192.png" alt="logo"/>-->
+
+    <section class="row">
+        <button type="button" class="btn btn-info" id="hora">Hora</button>
+        <button type="button" class="btn btn-primary" id="moeda">Moeda</button>
+        <button disabled type="button" class="btn btn-default">Idioma</button>
+        <button disabled type="button" class="btn btn-default">Altura</button>
+        <button disabled type="button" class="btn btn-default">Peso</button>
+        <button disabled type="button" class="btn btn-default">Temperatura</button>
+    </section>
+    <section>
+        <label>From $
+            <input class="form-control" type="number" min="0" value="1" id="moeda_base"></label>
+        <label>To $
+            <input class="form-control" type="number" min="0" value="0" disabled id="moeda_destino"></label>
+    </section>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

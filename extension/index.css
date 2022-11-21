@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 4px;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 250px;
+  min-height: 200px;
+}
+
+.color {
+  color: #333;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #222;
+  padding: 1rem;
+  text-align: center;
+}

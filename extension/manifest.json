@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "BR/CA converter",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "BR/CA converter",
+    "default_icon": {
+      "32": "favicon-32x32.png"
+    }
+  },
+  "description": "converts utils from Brazil to Canada units",
+  "icons": {},
+  "author": "Daniel Santos",
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "*://*.w-b.dev/*",
+        "*://*.willis-brown.com/*",
+        "*://*.willis-brown.ca/*",
+        "*://*.willisbrown.ca/*"
+      ]
+    }
+  ],
+  "offline_enabled": true,
+  "omnibox": {
+    "keyword": "br converter"
+  },
+  "current_locale": "en",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "content_security_policy": {
+    "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval'; object-src 'self'"
+  },
+  "short_name": "BR/CA"
+}

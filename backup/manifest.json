@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "description": "converts utils from Brazil to Canada units",
+  "manifest_version": 3,
+  "author": "Daniel Santos",
+  "action":{
+    "default_popup": "index.html",
+    "default_title": "BR/CA converter"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "name": "BR/CA converter",
+  "short_name": "BR/CA",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7fac5e",
+  "background_color": "#483D8BF2",
+  //  "icons": [
+  //  {
+  //        "backup": "favicon.ico",
+  //        "sizes": "64x64 32x32 24x24 16x16",
+  //        "type": "image/x-icon"
+  //      },
+  //    {
+  //      "backup": "/android-chrome-192x192.png",
+  //      "sizes": "192x192",
+  //      "type": "image/png"
+  //    },
+  //    {
+  //      "backup": "/android-chrome-512x512.png",
+  //      "sizes": "512x512",
+  //      "type": "image/png"
+  //    }
+  //  ]
+}
